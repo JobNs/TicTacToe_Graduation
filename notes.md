@@ -49,7 +49,7 @@
 - Check if playing grid is full (draw)
     - ✅['X','','','','','','','',''] -> NOK
     - ✅['X','O','X','O','O','X','X','X','O'] -> OK
-    - ['X','O','X','O','O','','X','X','O'] -> NOK
+    - ✅['X','O','X','O','O','','X','X','O'] -> NOK
 
 - Have a valid random symbol place input
     - lower than -> NOK
