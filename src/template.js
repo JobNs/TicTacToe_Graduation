@@ -81,12 +81,15 @@ function isPlayingGridFull(playingGrid) {
             return false 
         }    
     }
-
     return true
+}
+
+function generateRandomInputPlace() {
+    return Math.floor(Math.random() * 9)
 }
 
 module.exports = { createNewPlayingGrid, createNewPlayers,
     setActivaPlayerAtTheStartOfTheGame, switchActivePlayer,
     inputSymbolOfPlayer, checkIfSymbolCanBePlaced,
-    checkIfPlayerHasWon, isPlayingGridFull
+    checkIfPlayerHasWon, isPlayingGridFull, generateRandomInputPlace
 }

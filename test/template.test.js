@@ -1,7 +1,7 @@
 const { createNewPlayingGrid, createNewPlayers,
     setActivaPlayerAtTheStartOfTheGame, switchActivePlayer,
     inputSymbolOfPlayer, checkIfSymbolCanBePlaced,
-    checkIfPlayerHasWon, isPlayingGridFull } = require('../src/template');
+    checkIfPlayerHasWon, isPlayingGridFull, generateRandomInputPlace } = require('../src/template');
 
 const newPlayingGrid = createNewPlayingGrid()
 const players = createNewPlayers()
@@ -162,6 +162,13 @@ describe('This test suite test a Tic Tac Toe game', () => {
         it("['X','O','X','O','O','','X','X','O'] -> true", () => {
             const playingGrid = ['X', 'O', 'X', 'O', 'O', '', 'X', 'X', 'O']
             expect(isPlayingGridFull(playingGrid)).toEqual(false)
+        });
+    });
+
+    describe('We want to have a random numer as input for where to place a symbol', () => {
+        it('The random number cannot be lower than 0 ', () => {
+            const placeForSymbol = generateRandomInputPlace()
+            expect(placeForSymbol < 0).toEqual(false)
         });
     });
 });
