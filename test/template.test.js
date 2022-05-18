@@ -170,5 +170,9 @@ describe('This test suite test a Tic Tac Toe game', () => {
             const placeForSymbol = generateRandomInputPlace()
             expect(placeForSymbol < 0).toEqual(false)
         });
+        it('The random number cannot be higher than 8 ', () => {
+            const placeForSymbol = generateRandomInputPlace()
+            expect(placeForSymbol > 8).toEqual(false)
+        });
     });
 });
