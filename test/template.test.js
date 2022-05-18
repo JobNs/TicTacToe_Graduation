@@ -1,6 +1,7 @@
 const { createNewPlayingGrid, createNewPlayers,
     setActivaPlayerAtTheStartOfTheGame, switchActivePlayer,
-    inputSymbolOfPlayer, checkIfSymbolCanBePlaced } = require('../src/template');
+    inputSymbolOfPlayer, checkIfSymbolCanBePlaced,
+    checkIfPlayerHasWon } = require('../src/template');
 
 const newPlayingGrid = createNewPlayingGrid()
 const players = createNewPlayers()
@@ -107,7 +108,7 @@ describe('This test suite test a Tic Tac Toe game', () => {
     describe('We want to check whether the player has won the game on a horizaontal row', () => {
         it("['X','X','X','','','','','',''] -> true ", () => {
             const playingGridToCheckForWin = ['X', 'X', 'X', '', '', '', '', '', '']
-            
+            expect(checkIfPlayerHasWon(playingGridToCheckForWin)).toEqual(true)
         });
     });
 });

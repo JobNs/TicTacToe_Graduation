@@ -30,7 +30,12 @@ function checkIfSymbolCanBePlaced(playingGrid, place) {
     } else return false
 }
 
+function checkIfPlayerHasWon(playingGrid) {
+    return true
+}
+
 module.exports = { createNewPlayingGrid, createNewPlayers,
     setActivaPlayerAtTheStartOfTheGame, switchActivePlayer,
-    inputSymbolOfPlayer, checkIfSymbolCanBePlaced
+    inputSymbolOfPlayer, checkIfSymbolCanBePlaced,
+    checkIfPlayerHasWon
 }
