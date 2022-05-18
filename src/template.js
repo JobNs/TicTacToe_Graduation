@@ -1,5 +1,6 @@
-function templateFunction(x) {
-    return x;
+function createNewPlayingGrid() {
+    var newPlayingGrid = new Array(9)
+    return newPlayingGrid;
 }
 
-module.exports = templateFunction
+module.exports = createNewPlayingGrid

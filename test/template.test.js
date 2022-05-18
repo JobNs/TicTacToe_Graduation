@@ -1,10 +1,12 @@
-const templateFunction = require('../src/template');
+const createNewPlayingGrid = require('../src/template');
 
 
-describe('This test suites tests...', () => {
-    describe('First describe:', () => {
-        it('- First test', () => {
-            expect(templateFunction(1)).toEqual(1);
+describe('This test suite test a Tic Tac Toe game', () => {
+    describe('We have a valid playing grid for the game, so:', () => {
+        it('- A grid of 9 places is valid', () => {
+            newPlayingGrid = createNewPlayingGrid()
+            lengthNewPlayingGrid = newPlayingGrid.length
+            expect(lengthNewPlayingGrid == 9).toEqual(true);
         });
     });
 });
