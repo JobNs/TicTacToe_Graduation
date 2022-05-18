@@ -43,6 +43,8 @@
     - ✅['','','X','','','X','','','X'] -> true
 
 - Check if player has won diagonal
+    - ✅['X','','','','X','','','','X'] -> true
+    - ['','','X','','X','X','','',''] -> true
 
 - Check if playing grid is full (draw)
 
@@ -50,4 +52,4 @@
 
 
 
-[ , , , , , , , , ]
+['','','','','','','','','']

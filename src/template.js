@@ -35,6 +35,8 @@ function checkIfPlayerHasWon(playingGrid) {
         return true
     } else if (checkForVerticalWin(playingGrid)) {
         return true
+    } else if (checkForDiagonalWin(playingGrid)) {
+        return true
     } else {
         return false    
     }
@@ -62,6 +64,12 @@ function checkForVerticalWin(playingGrid){
         return true
     } else {
         return false
+    }
+}
+
+function checkForDiagonalWin(playingGrid) {
+    if (playingGrid[0] != '' && (playingGrid[0] == playingGrid[4] && playingGrid[4] == playingGrid[8])) {
+        return true
     }
 }
 
