@@ -35,9 +35,12 @@
     - ✅["X","X","X", , , , , , ] -> OK
     - ✅["X", ,"X","X", , , , , ] -> NOK
     - ✅[ , , ,"X","X","X", , , ] -> true
-    - [ , , , , , ,"O","O","O"] -> true
+    - ✅[ , , , , , ,"O","O","O"] -> true
 
 - Check if player has won vertical
+    - ✅['X','','','X','','','X','',''] -> true
+    - ['','X','','','X','','','X',''] -> true
+    - ['','','X','','','X','','','X'] -> true
 
 - Check if player has won diagonal
 
