@@ -32,9 +32,9 @@
     - ✅["X", , , , , , , , ], O wants in first place -> NOK
 
 - Check if player has won horizontal
-    - ["X","X","X", , , , , , ] -> OK
-    - ["X", ,"X","X", , , , , ] -> NOK
-    - [ , , ,"X","X","X", , , ] -> true
+    - ✅["X","X","X", , , , , , ] -> OK
+    - ✅["X", ,"X","X", , , , , ] -> NOK
+    - ✅[ , , ,"X","X","X", , , ] -> true
     - [ , , , , , ,"O","O","O"] -> true
 
 - Check if player has won vertical

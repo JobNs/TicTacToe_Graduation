@@ -31,12 +31,22 @@ function checkIfSymbolCanBePlaced(playingGrid, place) {
 }
 
 function checkIfPlayerHasWon(playingGrid) {
-    if (playingGrid[0] == playingGrid[1] && playingGrid[1] == playingGrid[2]) {
+    if (checkForHorizontalWin(playingGrid) == true) {
         return true
     } else {
         return false    
     }
     
+}
+
+function checkForHorizontalWin(playingGrid) {
+    if (playingGrid[0] != '' && (playingGrid[0] == playingGrid[1] && playingGrid[1] == playingGrid[2])) {
+        return true
+    } else if(playingGrid[3] != '' && (playingGrid[3] == playingGrid[4] && playingGrid[4] == playingGrid[5])) {
+        return true
+    } else {
+        return false
+    }
 }
 
 module.exports = { createNewPlayingGrid, createNewPlayers,
