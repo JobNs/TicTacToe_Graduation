@@ -24,7 +24,13 @@ function inputSymbolOfPlayer(place, activePlayer, playingGrid) {
     return playingGrid
 }
 
+function checkIfSymbolCanBePlaced(playingGrid, place) {
+    if (playingGrid[place] == '') {
+        return true
+    }
+}
+
 module.exports = { createNewPlayingGrid, createNewPlayers,
     setActivaPlayerAtTheStartOfTheGame, switchActivePlayer,
-    inputSymbolOfPlayer
+    inputSymbolOfPlayer, checkIfSymbolCanBePlaced
 }

@@ -1,6 +1,6 @@
 const { createNewPlayingGrid, createNewPlayers,
     setActivaPlayerAtTheStartOfTheGame, switchActivePlayer,
-    inputSymbolOfPlayer } = require('../src/template');
+    inputSymbolOfPlayer, checkIfSymbolCanBePlaced } = require('../src/template');
 
 const newPlayingGrid = createNewPlayingGrid()
 const players = createNewPlayers()
@@ -74,6 +74,28 @@ describe('This test suite test a Tic Tac Toe game', () => {
             const activePlayer = 0
             const playingGridAfterturn = inputSymbolOfPlayer(place, players[activePlayer], newPlayingGrid)
             expect(playingGridAfterturn).toEqual(['X','','','','','','','',''])
+        });
+        it('Player 1 can input a symbol on the fifth place in the playing grid ', () => {
+            const newPlayingGrid = createNewPlayingGrid()
+            const place = 4
+            const activePlayer = 0
+            const playingGridAfterturn = inputSymbolOfPlayer(place, players[activePlayer], newPlayingGrid)
+            expect(playingGridAfterturn).toEqual(['','','','','X','','','',''])
+        });
+        it('Player 2 can input a symbol on the first place in the playing grid ', () => {
+            const newPlayingGrid = createNewPlayingGrid()
+            const place = 0
+            const activePlayer = 1
+            const playingGridAfterturn = inputSymbolOfPlayer(place, players[activePlayer], newPlayingGrid)
+            expect(playingGridAfterturn).toEqual(['O', '', '', '', '', '', '', '', ''])
+        });
+    });
+
+    describe('We want to check whether a place is empty, so a player can input their symbol', () => {
+        it('["X", , , , , , , , ], O wants in second place -> OK', () => {
+            const playingGridToCheck = ['X','','','','','','','','']
+            const place = 1
+            expect(checkIfSymbolCanBePlaced(playingGridToCheck, place)).toEqual(true)
         });
     });
 });
