@@ -7,7 +7,7 @@ const newPlayingGrid = createNewPlayingGrid()
 const players = createNewPlayers()
 const startPlayer = setActivaPlayerAtTheStartOfTheGame()
 
-describe('This test suite test a Tic Tac Toe game', () => {
+describe('This test suite tests a Tic Tac Toe game', () => {
     describe('We have a valid playing grid for the game, so:', () => {
         it('- A grid of 9 places is valid', () => {
             
@@ -42,10 +42,10 @@ describe('This test suite test a Tic Tac Toe game', () => {
     });
 
     describe('We want player 1 to be the active player at the start of the game', () => {
-        it('Player 1 is active', () => {
+        it('- Player 1 is active', () => {
             expect(startPlayer == 0).toEqual(true)
         });
-        it('Player 2 is not active', () => {
+        it('- Player 2 is not active', () => {
             expect(startPlayer == 1).toEqual(false)
         });
     });
@@ -68,22 +68,22 @@ describe('This test suite test a Tic Tac Toe game', () => {
         });
     });
 
-    describe('a player can write their symbol to the playing grid:', () => {
-        it('Player 1 can input a symbol on the first place in the playing grid ', () => {
+    describe('A player can write their symbol to the playing grid:', () => {
+        it('- Player 1 can input a symbol on the first place in the playing grid ', () => {
             const newPlayingGrid = createNewPlayingGrid()
             const place = 0
             const activePlayer = 0
             const playingGridAfterturn = inputSymbolOfPlayer(place, players[activePlayer], newPlayingGrid)
             expect(playingGridAfterturn).toEqual(['X','','','','','','','',''])
         });
-        it('Player 1 can input a symbol on the fifth place in the playing grid ', () => {
+        it('- Player 1 can input a symbol on the fifth place in the playing grid ', () => {
             const newPlayingGrid = createNewPlayingGrid()
             const place = 4
             const activePlayer = 0
             const playingGridAfterturn = inputSymbolOfPlayer(place, players[activePlayer], newPlayingGrid)
             expect(playingGridAfterturn).toEqual(['','','','','X','','','',''])
         });
-        it('Player 2 can input a symbol on the first place in the playing grid ', () => {
+        it('- Player 2 can input a symbol on the first place in the playing grid ', () => {
             const newPlayingGrid = createNewPlayingGrid()
             const place = 0
             const activePlayer = 1
