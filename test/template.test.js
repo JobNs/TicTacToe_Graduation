@@ -1,5 +1,6 @@
 const { createNewPlayingGrid, createNewPlayers,
-    setActivaPlayerAtTheStartOfTheGame, switchActivePlayer } = require('../src/template');
+    setActivaPlayerAtTheStartOfTheGame, switchActivePlayer,
+    inputSymbolOfPlayer } = require('../src/template');
 
 const newPlayingGrid = createNewPlayingGrid()
 const players = createNewPlayers()
@@ -63,6 +64,16 @@ describe('This test suite test a Tic Tac Toe game', () => {
             const currentActivePlayer = 1
             var newActivePlayer = switchActivePlayer(currentActivePlayer)
             expect(newActivePlayer).toEqual(0)
+        });
+    });
+
+    describe('a player can write their symbol to the playing grid:', () => {
+        it('Player 1 can input a symbol on the first place in the playing grid ', () => {
+            const newPlayingGrid = createNewPlayingGrid()
+            const place = 0
+            const activePlayer = 0
+            const playingGridAfterturn = inputSymbolOfPlayer(place, players[activePlayer], newPlayingGrid)
+            expect(playingGridAfterturn).toEqual(['X','','','','','','','',''])
         });
     });
 });

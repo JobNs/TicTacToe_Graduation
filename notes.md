@@ -23,10 +23,19 @@
     - ✅Active player 2 becomes 1 -> OK
 
 - Players can write their symbol to the playing grid
+    - ["X", , , , , , , , ] -> OK
+    - [ , , , ,"X", , , , ] -> OK
+    - ["O", , , , , , , , ] -> OK
 
 - There is a check whether their is not a symbol allready
+    - ["X", , , , , , , , ], O wants in second place -> OK
+    - ["X", , , , , , , , ], O wants in first place -> NOK
 
 - Check if player has won horizontal
+    - ["X","X","X", , , , , , ] -> OK
+    - ["X", ,"X","X", , , , , ] -> NOK
+    - [ , , ,"X","X","X", , , ] -> true
+    - [ , , , , , ,"O","O","O"] -> true
 
 - Check if player has won vertical
 
@@ -35,3 +44,7 @@
 - Check if playing grid is full (draw)
 
 - Have a valid random symbol place input
+
+
+
+[ , , , , , , , , ]

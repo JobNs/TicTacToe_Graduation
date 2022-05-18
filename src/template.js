@@ -1,5 +1,5 @@
 function createNewPlayingGrid() {
-    var newPlayingGrid = new Array(9)
+    var newPlayingGrid = ['','','','','','','','','']
     return newPlayingGrid;
 }
 
@@ -18,6 +18,13 @@ function switchActivePlayer(activePlayer) {
     } else return 0
 }
 
+function inputSymbolOfPlayer(place, activePlayer, playingGrid) {
+    var playingGridToChange = playingGrid
+    playingGridToChange[place] = activePlayer
+    return playingGrid
+}
+
 module.exports = { createNewPlayingGrid, createNewPlayers,
-    setActivaPlayerAtTheStartOfTheGame, switchActivePlayer
+    setActivaPlayerAtTheStartOfTheGame, switchActivePlayer,
+    inputSymbolOfPlayer
 }
