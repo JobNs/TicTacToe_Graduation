@@ -3,4 +3,9 @@ function createNewPlayingGrid() {
     return newPlayingGrid;
 }
 
-module.exports = createNewPlayingGrid
+function createNewPlayers() {
+    var newPlayers = ["Player 1", "Player 2"]
+    return newPlayers
+}
+
+module.exports = { createNewPlayingGrid, createNewPlayers}

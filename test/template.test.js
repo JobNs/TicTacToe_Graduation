@@ -1,6 +1,7 @@
-const createNewPlayingGrid = require('../src/template');
+const { createNewPlayingGrid, createNewPlayers} = require('../src/template');
 
 const newPlayingGrid = createNewPlayingGrid()
+const players = createNewPlayers()
 
 describe('This test suite test a Tic Tac Toe game', () => {
     describe('We have a valid playing grid for the game, so:', () => {
@@ -16,6 +17,14 @@ describe('This test suite test a Tic Tac Toe game', () => {
         it('- A grid of 10 places is invalid', () => {
             lengthNewPlayingGrid = newPlayingGrid.length
             expect(lengthNewPlayingGrid == 10).toEqual(false);
+        });
+    });
+    describe('We want to have a valid amount of players, so', () => {
+        it('- 2 players is valid ', () => {
+            expect(players.length == 2).toEqual(true)
+        });
+        it('- 3 players is invalid ', () => {
+            expect(players.length == 3).toEqual(false)
         });
     });
 });
