@@ -6,8 +6,5 @@ describe('This test suites tests...', () => {
         it('- First test', () => {
             expect(templateFunction(1)).toEqual(1);
         });
-        it('- Second test', () => {
-            expect(templateFunction(2)).toEqual(2);
-        });
     });
 });
