@@ -31,7 +31,12 @@ function checkIfSymbolCanBePlaced(playingGrid, place) {
 }
 
 function checkIfPlayerHasWon(playingGrid) {
-    return true
+    if (playingGrid[0] == playingGrid[1] && playingGrid[1] == playingGrid[2]) {
+        return true
+    } else {
+        return false    
+    }
+    
 }
 
 module.exports = { createNewPlayingGrid, createNewPlayers,
