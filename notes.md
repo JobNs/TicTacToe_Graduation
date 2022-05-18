@@ -23,8 +23,8 @@
     - ✅Active player 2 becomes 1 -> OK
 
 - Players can write their symbol to the playing grid
-    - ["X", , , , , , , , ] -> OK
-    - [ , , , ,"X", , , , ] -> OK
+    - ✅["X", , , , , , , , ] -> OK
+    - ✅[ , , , ,"X", , , , ] -> OK
     - ["O", , , , , , , , ] -> OK
 
 - There is a check whether their is not a symbol allready
