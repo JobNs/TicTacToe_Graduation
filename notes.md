@@ -47,9 +47,14 @@
     - ✅['','','X','','X','','X','',''] -> true
 
 - Check if playing grid is full (draw)
+    - ['X','','','','','','','',''] -> NOK
+    - ['X','O','X','O','O','X','X','X','O'] -> OK
+    - ['X','O','X','O','O','','X','X','O'] -> NOK
 
 - Have a valid random symbol place input
-
+    - lower than -> NOK
+    - Higher than 8 -> NOK
+    - between 0 and 8 -> OK
 
 
 ['','','','','','','','','']

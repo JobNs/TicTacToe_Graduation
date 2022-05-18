@@ -149,4 +149,8 @@ describe('This test suite test a Tic Tac Toe game', () => {
             expect(checkIfPlayerHasWon(playingGridToCheckForWin)).toEqual(true)
         });
     });
+
+    describe('We want to check whether the playing grid is full ', () => {
+        
+    });
 });
