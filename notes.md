@@ -3,16 +3,16 @@
 # Attomic behaviours
 
 - There is a valid playing grid
-    - playing grid of 9 -> OK
-    - playing grid of 8 -> NOK
-    - playing grid of 10 -> NOK
+    - ✅playing grid of 9 -> OK
+    - ✅playing grid of 8 -> NOK
+    - ✅playing grid of 10 -> NOK
 
 - There are 2 valid players
     - 2 players -> OK
     - 3 players -> NOK
     - Player one has symbol X -> OK
     - Player two has symbol O -> OK
-    
+
 - Player 1 starts at the beginning of the game
 
 - Active player can be switched
