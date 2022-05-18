@@ -18,6 +18,9 @@
     - ✅Active player is player 2 -> NOK
 
 - Active player can be switched
+    - ✅Active player 1 becomes 2 -> OK
+    - Active player 1 stays 1 -> NOK
+    - Active player 2 becomes 1 -> OK
 
 - Players can write their symbol to the playing grid
 
