@@ -59,5 +59,10 @@ describe('This test suite test a Tic Tac Toe game', () => {
             var newActivePlayer = switchActivePlayer(currentActivePlayer)
             expect(newActivePlayer == 0).toEqual(false)
         });
+        it('- Active player 2 becomes 1', () => {
+            const currentActivePlayer = 1
+            var newActivePlayer = switchActivePlayer(currentActivePlayer)
+            expect(newActivePlayer).toEqual(0)
+        });
     });
 });
