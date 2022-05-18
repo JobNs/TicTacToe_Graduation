@@ -103,4 +103,11 @@ describe('This test suite test a Tic Tac Toe game', () => {
             expect(checkIfSymbolCanBePlaced(playingGridToCheck, place)).toEqual(false)
         });
     });
+
+    describe('We want to check whether the player has won the game on a horizaontal row', () => {
+        it("['X','X','X','','','','','',''] -> true ", () => {
+            const playingGridToCheckForWin = ['X', 'X', 'X', '', '', '', '', '', '']
+            
+        });
+    });
 });
