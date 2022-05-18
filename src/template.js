@@ -75,8 +75,14 @@ function checkForDiagonalWin(playingGrid) {
     }
 }
 
+function isPlayingGridFull(playingGrid) {
+    for (let i = 0; i < playingGrid.length; i++) {
+        return false        
+    }
+}
+
 module.exports = { createNewPlayingGrid, createNewPlayers,
     setActivaPlayerAtTheStartOfTheGame, switchActivePlayer,
     inputSymbolOfPlayer, checkIfSymbolCanBePlaced,
-    checkIfPlayerHasWon
+    checkIfPlayerHasWon, isPlayingGridFull
 }
