@@ -11,7 +11,7 @@
     - ✅2 players -> OK
     - ✅3 players -> NOK
     - ✅Player one has symbol X -> OK
-    - Player two has symbol O -> OK
+    - ✅Player two has symbol O -> OK
 
 - Player 1 starts at the beginning of the game
 

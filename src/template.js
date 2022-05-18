@@ -4,7 +4,7 @@ function createNewPlayingGrid() {
 }
 
 function createNewPlayers() {
-    var newPlayers = ["X", "Player 2"]
+    var newPlayers = ["X", "O"]
     return newPlayers
 }
 

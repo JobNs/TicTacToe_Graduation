@@ -32,5 +32,8 @@ describe('This test suite test a Tic Tac Toe game', () => {
         it('- Player 1 has symbol X', () => {
              expect(players[0]).toEqual("X")
         });
+        it('- Player 2 has symbol O', () => {
+            expect(players[1]).toEqual("O")
+        });
     });
 });
