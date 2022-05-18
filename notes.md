@@ -52,9 +52,7 @@
     - ✅['X','O','X','O','O','','X','X','O'] -> NOK
 
 - Have a valid random symbol place input
-    - ✅lower than 0 -> NOK
-    - ✅Higher than 8 -> NOK
-    - between 0 and 8 -> OK
+    - ✅between 0 and 8 -> OK
 
 
 ['','','','','','','','','']

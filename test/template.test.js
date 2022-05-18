@@ -166,13 +166,9 @@ describe('This test suite test a Tic Tac Toe game', () => {
     });
 
     describe('We want to have a random numer as input for where to place a symbol', () => {
-        it('The random number cannot be lower than 0 ', () => {
+        it('The random number should be between 0 and 8 ', () => {
             const placeForSymbol = generateRandomInputPlace()
-            expect(placeForSymbol < 0).toEqual(false)
-        });
-        it('The random number cannot be higher than 8 ', () => {
-            const placeForSymbol = generateRandomInputPlace()
-            expect(placeForSymbol > 8).toEqual(false)
+            expect(placeForSymbol >= 0 && placeForSymbol <= 8).toEqual(true)
         });
     });
 });
