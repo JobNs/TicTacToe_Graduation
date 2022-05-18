@@ -144,5 +144,9 @@ describe('This test suite test a Tic Tac Toe game', () => {
             const playingGridToCheckForWin = ['X', '', '', '', 'X', '', '', '', 'X']
             expect(checkIfPlayerHasWon(playingGridToCheckForWin)).toEqual(true)
         });
+        it("['','','X','','X','','X','','']-> true", () => {
+            const playingGridToCheckForWin = ['', '', 'X', '', 'X', '', 'X', '', '']
+            expect(checkIfPlayerHasWon(playingGridToCheckForWin)).toEqual(true)
+        });
     });
 });

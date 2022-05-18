@@ -70,6 +70,8 @@ function checkForVerticalWin(playingGrid){
 function checkForDiagonalWin(playingGrid) {
     if (playingGrid[0] != '' && (playingGrid[0] == playingGrid[4] && playingGrid[4] == playingGrid[8])) {
         return true
+    } if (playingGrid[2] != '' && (playingGrid[2] == playingGrid[4] && playingGrid[4] == playingGrid[6])) {
+        return true
     }
 }
 
