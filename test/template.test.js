@@ -1,8 +1,9 @@
 const { createNewPlayingGrid, createNewPlayers,
-        setActivaPlayerAtTheStartOfTheGame } = require('../src/template');
+    setActivaPlayerAtTheStartOfTheGame, switchActivePlayer } = require('../src/template');
 
 const newPlayingGrid = createNewPlayingGrid()
 const players = createNewPlayers()
+const startPlayer = setActivaPlayerAtTheStartOfTheGame()
 
 describe('This test suite test a Tic Tac Toe game', () => {
     describe('We have a valid playing grid for the game, so:', () => {
@@ -40,8 +41,23 @@ describe('This test suite test a Tic Tac Toe game', () => {
 
     describe('We want player 1 to be the active player at the start of the game', () => {
         it('Player 1 is active', () => {
-            currentplayer = setActivaPlayerAtTheStartOfTheGame()
-            expect(currentplayer == 0).toEqual(true)
+            expect(startPlayer == 0).toEqual(true)
+        });
+        it('Player 2 is not active', () => {
+            expect(startPlayer == 1).toEqual(false)
+        });
+    });
+
+    describe('We want to switch the active player role, so', () => {
+        it('- Active player 1 becomes 2', () => {
+            const currentActivePlayer = 0
+            var newActivePlayer = switchActivePlayer(currentActivePlayer)
+            expect(newActivePlayer).toEqual(1)
+        });
+        it('- Active player 1 does not stay 1', () => {
+            const currentActivePlayer = 0
+            var newActivePlayer = switchActivePlayer(currentActivePlayer)
+            expect(newActivePlayer == 0).toEqual(false)
         });
     });
 });

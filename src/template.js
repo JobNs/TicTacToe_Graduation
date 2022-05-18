@@ -12,6 +12,12 @@ function setActivaPlayerAtTheStartOfTheGame() {
     return 0
 }
 
+function switchActivePlayer(activePlayer) {
+    if (activePlayer == 0) {
+        return 1
+    }
+}
+
 module.exports = { createNewPlayingGrid, createNewPlayers,
-    setActivaPlayerAtTheStartOfTheGame
+    setActivaPlayerAtTheStartOfTheGame, switchActivePlayer
 }
