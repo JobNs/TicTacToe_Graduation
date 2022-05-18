@@ -56,6 +56,8 @@ function checkForHorizontalWin(playingGrid) {
 function checkForVerticalWin(playingGrid){
     if (playingGrid[0] != '' && (playingGrid[0] == playingGrid[3] && playingGrid[3] == playingGrid[6])) {
         return true
+    } if (playingGrid[1] != '' && (playingGrid[1] == playingGrid[4] && playingGrid[4] == playingGrid[7])) {
+        return true
     }
 }
 
