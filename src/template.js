@@ -27,7 +27,7 @@ function inputSymbolOfPlayer(place, activePlayer, playingGrid) {
 function checkIfSymbolCanBePlaced(playingGrid, place) {
     if (playingGrid[place] == '') {
         return true
-    }
+    } else return false
 }
 
 module.exports = { createNewPlayingGrid, createNewPlayers,

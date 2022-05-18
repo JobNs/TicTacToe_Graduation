@@ -97,5 +97,10 @@ describe('This test suite test a Tic Tac Toe game', () => {
             const place = 1
             expect(checkIfSymbolCanBePlaced(playingGridToCheck, place)).toEqual(true)
         });
+        it('["X", , , , , , , , ], O wants in first place -> NOK', () => {
+            const playingGridToCheck = ['X', '', '', '', '', '', '', '', '']
+            const place = 0
+            expect(checkIfSymbolCanBePlaced(playingGridToCheck, place)).toEqual(false)
+        });
     });
 });
