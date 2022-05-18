@@ -8,9 +8,9 @@
     - ✅playing grid of 10 -> NOK
 
 - There are 2 valid players
-    - 2 players -> OK
-    - 3 players -> NOK
-    - Player one has symbol X -> OK
+    - ✅2 players -> OK
+    - ✅3 players -> NOK
+    - ✅Player one has symbol X -> OK
     - Player two has symbol O -> OK
 
 - Player 1 starts at the beginning of the game
