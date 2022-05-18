@@ -40,7 +40,7 @@
 - Check if player has won vertical
     - ✅['X','','','X','','','X','',''] -> true
     - ✅['','X','','','X','','','X',''] -> true
-    - ['','','X','','','X','','','X'] -> true
+    - ✅['','','X','','','X','','','X'] -> true
 
 - Check if player has won diagonal
 
