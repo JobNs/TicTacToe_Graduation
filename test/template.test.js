@@ -155,5 +155,9 @@ describe('This test suite test a Tic Tac Toe game', () => {
             const playingGrid = ['X', '', '', '', '', '', '', '', '']
             expect(isPlayingGridFull(playingGrid)).toEqual(false)
         });
+        it("['X','O','X','O','O','X','X','X','O'] -> true", () => {
+            const playingGrid = ['X', 'O', 'X', 'O', 'O', 'X', 'X', 'X', 'O']
+            expect(isPlayingGridFull(playingGrid)).toEqual(true)
+        });
     });
 });

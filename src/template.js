@@ -77,8 +77,12 @@ function checkForDiagonalWin(playingGrid) {
 
 function isPlayingGridFull(playingGrid) {
     for (let i = 0; i < playingGrid.length; i++) {
-        return false        
+        if (playingGrid[i] == '') {
+            return false 
+        }    
     }
+
+    return true
 }
 
 module.exports = { createNewPlayingGrid, createNewPlayers,
