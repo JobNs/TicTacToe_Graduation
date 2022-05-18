@@ -25,7 +25,7 @@
 - Players can write their symbol to the playing grid
     - ✅["X", , , , , , , , ] -> OK
     - ✅[ , , , ,"X", , , , ] -> OK
-    - ["O", , , , , , , , ] -> OK
+    - ✅["O", , , , , , , , ] -> OK
 
 - There is a check whether their is not a symbol allready
     - ["X", , , , , , , , ], O wants in second place -> OK
