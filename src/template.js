@@ -33,6 +33,8 @@ function checkIfSymbolCanBePlaced(playingGrid, place) {
 function checkIfPlayerHasWon(playingGrid) {
     if (checkForHorizontalWin(playingGrid) == true) {
         return true
+    } else if (checkForVerticalWin(playingGrid)) {
+        return true
     } else {
         return false    
     }
@@ -48,6 +50,12 @@ function checkForHorizontalWin(playingGrid) {
         return true
     } else {
         return false
+    }
+}
+
+function checkForVerticalWin(playingGrid){
+    if (playingGrid[0] != '' && (playingGrid[0] == playingGrid[3] && playingGrid[3] == playingGrid[6])) {
+        return true
     }
 }
 
