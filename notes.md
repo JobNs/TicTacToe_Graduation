@@ -28,8 +28,8 @@
     - ✅["O", , , , , , , , ] -> OK
 
 - There is a check whether their is not a symbol allready
-    - ["X", , , , , , , , ], O wants in second place -> OK
-    - ["X", , , , , , , , ], O wants in first place -> NOK
+    - ✅["X", , , , , , , , ], O wants in second place -> OK
+    - ✅["X", , , , , , , , ], O wants in first place -> NOK
 
 - Check if player has won horizontal
     - ["X","X","X", , , , , , ] -> OK
