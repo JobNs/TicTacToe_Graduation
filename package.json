@@ -1,0 +1,23 @@
+{
+  "name": "template_kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "watch": "jest --watchAll --color --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JobNs/template_kata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JobNs/template_kata/issues"
+  },
+  "homepage": "https://github.com/JobNs/template_kata#readme",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
+}
