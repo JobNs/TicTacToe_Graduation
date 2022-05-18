@@ -14,6 +14,8 @@
     - ✅Player two has symbol O -> OK
 
 - Player 1 starts at the beginning of the game
+    - ✅Active player is player 1 -> OK
+    - Active player is player 2 -> NOK
 
 - Active player can be switched
 

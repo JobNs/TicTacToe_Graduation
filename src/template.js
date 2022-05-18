@@ -8,4 +8,10 @@ function createNewPlayers() {
     return newPlayers
 }
 
-module.exports = { createNewPlayingGrid, createNewPlayers}
+function setActivaPlayerAtTheStartOfTheGame() {
+    return 0
+}
+
+module.exports = { createNewPlayingGrid, createNewPlayers,
+    setActivaPlayerAtTheStartOfTheGame
+}

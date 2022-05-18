@@ -1,4 +1,5 @@
-const { createNewPlayingGrid, createNewPlayers} = require('../src/template');
+const { createNewPlayingGrid, createNewPlayers,
+        setActivaPlayerAtTheStartOfTheGame } = require('../src/template');
 
 const newPlayingGrid = createNewPlayingGrid()
 const players = createNewPlayers()
@@ -34,6 +35,13 @@ describe('This test suite test a Tic Tac Toe game', () => {
         });
         it('- Player 2 has symbol O', () => {
             expect(players[1]).toEqual("O")
+        });
+    });
+
+    describe('We want player 1 to be the active player at the start of the game', () => {
+        it('Player 1 is active', () => {
+            currentplayer = setActivaPlayerAtTheStartOfTheGame()
+            expect(currentplayer == 0).toEqual(true)
         });
     });
 });
